@@ -1,0 +1,39 @@
+footer {
+    width: 100%;
+    background-color: #1b1d22;
+    padding: 20px 0;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media svg {
+    font-size: 32px;
+    margin: 20px 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.social-media :nth-child(1) svg:hover {
+    color: #E1306C;    
+}
+
+.social-media :nth-child(2) svg:hover {
+    color: #1DA1F2;    
+}
+
+.social-media :nth-child(3) svg:hover {
+    color: #FF0000;    
+}
+
+.social-media :nth-child(4) svg:hover {
+    color: #4285F4;    
+}
+
+
+.copyright-info {
+    color: #fff;
+    text-align: center;
+}
