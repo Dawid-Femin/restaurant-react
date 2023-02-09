@@ -18,9 +18,9 @@ const Navbar = () => {
         </div>
         <div className="navBarRight">
           <nav ref={navRef}>
-            <Link to="/">Home</Link>
+            <Link to="/">Strona główna</Link>
             <Link to="/menu">Menu</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">Kontakt</Link>
             <button className='nav-btn nav-close-btn' onClick={showNavbar}>
               <FaTimes />
             </button>
