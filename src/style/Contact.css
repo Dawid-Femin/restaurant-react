@@ -6,6 +6,7 @@
 
 .contact-section {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .left-info {
@@ -60,4 +61,24 @@
 
 .right-info button:hover {
     background-color: rgb(200, 0, 0);
+}
+
+@media only screen and (max-width: 1024px) {
+    .contact-section {
+        padding: 20px 40px;
+    }
+
+    .left-info {
+        flex-basis: 100%;
+    }
+
+    .right-info h3 {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .right-info button {
+        display: block;
+        margin: 30px auto;
+    }
 }
