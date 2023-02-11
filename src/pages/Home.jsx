@@ -2,8 +2,10 @@ import React from 'react';
 import Navbar from '../components/Navbar.jsx';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
+import Gallery from '../components/Gallery.jsx';
 import PizzaPhoto from '../assets/restaurant-photo.jpg';
 import '../style/Home.css';
+import { photosGallery } from '../helpers/photosGallery.js';
 
 
 const Home = () => {
@@ -22,6 +24,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+    <Gallery photosGallery={photosGallery} />
     <Footer />
     </>
   )
