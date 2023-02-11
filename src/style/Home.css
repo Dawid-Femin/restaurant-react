@@ -57,3 +57,13 @@
 }
 
 /* End About Us section */
+
+/* Start gallery section */
+
+.gallery-info h3 {
+    font-size: 36px;
+    text-align: center;
+    margin: 100px 0;
+}
+
+/* End gallery section */

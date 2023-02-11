@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import HeaderImage from '../assets/pizza-food.jpg';
 import '../style/Header.css';
 
-
 const Header = () => {
   return (
     <>

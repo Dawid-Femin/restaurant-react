@@ -1,18 +1,18 @@
 import React from 'react';
-import Navbar from '../components/Navbar.jsx';
-import Header from '../components/Header.jsx';
-import Footer from '../components/Footer.jsx';
 import MenuItem from '../components/MenuItem.jsx';
 import BackToTop from '../components/BackToTop.jsx';
 import { MenuList } from '../helpers/MenuList.jsx';
 import { MenuListDrinks } from '../helpers/MenuListDrinks.jsx';
+import { motion } from 'framer-motion';
 import '../style/Menu.css';
+
 
 const Menu = () => {
   return (
-    <>
-    <Navbar />
-    <Header />
+    <motion.div 
+    initial={{ opacity: 0, scale: 0.5 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.5 }}>
     <div className="menu-description">
     <h3>Wybierz cos dla siebie ...</h3>
     <p>Nasza pizza jest wyjątkowo smaczna i pełna włoskich tradycji</p>
@@ -33,8 +33,7 @@ const Menu = () => {
       })}
     </div>
     <BackToTop />
-    <Footer />
-    </>
+    </motion.div>
   )
 };
 

@@ -5,6 +5,9 @@
     background-color: #1b1d22;
     height: 100px;
     line-height: 98px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
 .navBarLeft img {

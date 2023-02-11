@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import BackToTop from '../components/BackToTop.jsx';
-import Footer from '../components/Footer.jsx';
-import Header from '../components/Header.jsx';
-import Navbar from '../components/Navbar.jsx';
+import { motion } from 'framer-motion';
 import '../style/Contact.css';
 
 const Contact = () => {
@@ -13,9 +11,10 @@ const Contact = () => {
     iFrameData.src=`https://maps.google.com/maps?q=${latitude},${longitude}&hl=es;&output=embed`
   })
   return (
-    <>
-    <Navbar />
-    <Header />
+    <motion.div 
+    initial={{ opacity: 0, scale: 0.5 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.5 }}>
     <div className="contact-container">
       <div className="contact-section">
         <div className="left-info">
@@ -42,8 +41,7 @@ const Contact = () => {
       <iframe title='map-google' id='iFrameID' height='500px' width='100%'></iframe>
     </div>
     <BackToTop />
-    <Footer />
-    </>
+    </motion.div>
   )
 };
 

@@ -1,19 +1,18 @@
 import React from 'react';
-import Navbar from '../components/Navbar.jsx';
-import Header from '../components/Header.jsx';
-import Footer from '../components/Footer.jsx';
+import BackToTop from '../components/BackToTop.jsx';
 import Gallery from '../components/Gallery.jsx';
 import PizzaPhoto from '../assets/restaurant-photo.jpg';
-import '../style/Home.css';
 import { photosGallery } from '../helpers/photosGallery.js';
-import BackToTop from '../components/BackToTop.jsx';
+import { motion } from 'framer-motion';
+import '../style/Home.css';
 
 
 const Home = () => {
   return (
-    <>
-    <Navbar />
-    <Header />
+    <motion.div 
+    initial={{ opacity: 0, scale: 0.5 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.5 }}>
     <div className="about-us-container">
       <div className="about-us-sections">
         <div className="about-us-left">
@@ -25,10 +24,12 @@ const Home = () => {
         </div>
       </div>
     </div>
+    <div className="gallery-info">
+      <h3>Zobacz zdjęcia naszego lokalu</h3>
+    </div>
     <Gallery photosGallery={photosGallery} />
     <BackToTop />
-    <Footer />
-    </>
+    </motion.div>
   )
 };
 
