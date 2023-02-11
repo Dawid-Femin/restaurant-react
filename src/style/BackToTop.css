@@ -1,0 +1,8 @@
+.back-to-top-btn {
+    color: #1b1d22;
+    transition: .5s;
+}
+
+.back-to-top-btn:hover {
+    color: #3d3f44;
+}

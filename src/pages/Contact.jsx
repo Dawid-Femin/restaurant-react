@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import BackToTop from '../components/BackToTop.jsx';
 import Footer from '../components/Footer.jsx';
 import Header from '../components/Header.jsx';
 import Navbar from '../components/Navbar.jsx';
@@ -38,8 +39,9 @@ const Contact = () => {
       </div>
     </div>
     <div className="map">
-      <iframe id='iFrameID' height='500px' width='100%'></iframe>
+      <iframe title='map-google' id='iFrameID' height='500px' width='100%'></iframe>
     </div>
+    <BackToTop />
     <Footer />
     </>
   )

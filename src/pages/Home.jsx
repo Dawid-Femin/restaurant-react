@@ -6,6 +6,7 @@ import Gallery from '../components/Gallery.jsx';
 import PizzaPhoto from '../assets/restaurant-photo.jpg';
 import '../style/Home.css';
 import { photosGallery } from '../helpers/photosGallery.js';
+import BackToTop from '../components/BackToTop.jsx';
 
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
       </div>
     </div>
     <Gallery photosGallery={photosGallery} />
+    <BackToTop />
     <Footer />
     </>
   )

@@ -3,10 +3,10 @@ import Navbar from '../components/Navbar.jsx';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 import MenuItem from '../components/MenuItem.jsx';
+import BackToTop from '../components/BackToTop.jsx';
 import { MenuList } from '../helpers/MenuList.jsx';
 import { MenuListDrinks } from '../helpers/MenuListDrinks.jsx';
 import '../style/Menu.css';
-
 
 const Menu = () => {
   return (
@@ -32,6 +32,7 @@ const Menu = () => {
         return <MenuItem key={key} image={singleItem.image} name={singleItem.name} price={singleItem.price} />
       })}
     </div>
+    <BackToTop />
     <Footer />
     </>
   )
